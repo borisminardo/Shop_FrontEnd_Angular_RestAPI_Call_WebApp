@@ -24,6 +24,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { MeteoComponent } from './meteo/meteo.component';
 
 
 
@@ -51,6 +52,7 @@ const routes: Routes = [
     HeaderComponent,
     AboutComponent,
     FooterComponent,
+    MeteoComponent,
 
 
 
