@@ -1,0 +1,98 @@
+<div class="container">
+    <br>
+    <div class="jumbotron jumbotron">
+      <div class="container">
+        <div class="page-header">
+  
+          <h1>Registrati ora!</h1>
+        </div>
+      </div>
+    </div>
+  
+
+    <form name="form" #f="ngForm" class="form-verticaly" (ngSubmit)="processForm()">
+
+      <label class="sr-only" for="inlineFormInputGroupUsername">Nome</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" name="nome"[(ngModel)]= "utente.nome"
+          placeholder="Nome...">
+      </div>
+  
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Cognome</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" name="cognome" [(ngModel)]="utente.cognome"
+          placeholder="Cognome...">
+      </div>
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername3">Username</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername3"name="username" [(ngModel)]="utente.username"
+          placeholder="Username...">
+      </div>
+  
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername4">Mail</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="email" class="form-control" id="inlineFormInputGroupUsername4"name="mail" [(ngModel)]="utente.mail"
+          placeholder="Mail...">
+      </div>
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername5">Indirizzo</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername5"name="indirizzo" [(ngModel)]="utente.indirizzo"
+          placeholder="Indirizzo...">
+      </div>
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername6">Cap</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername6" name="cap"[(ngModel)]="utente.cap"
+          placeholder="Cap...">
+      </div>
+  
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername7">Nascita</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="date" class="form-control" id="inlineFormInputGroupUsername7"name="nascita" [(ngModel)]="utente.nascita"
+          placeholder="Nascita...">
+      </div>
+  
+  
+      <label class="sr-only" for="inlineFormInputGroupUsername8">Password</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="password" class="form-control" id="inlineFormInputGroupUsername8"name="password" [(ngModel)]="utente.password"
+          placeholder="Password...">
+      </div>
+  
+  
+  
+      <div class="form group col-md-7">
+        <input type="submit" value="Registra utente" class="btn btn-primary" style="margin-top: 20px;">
+      </div>
+    </form>
+    <br>
+  </div>

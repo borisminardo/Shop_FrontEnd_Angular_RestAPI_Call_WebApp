@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="page-header">
+        <br>
+        <h3>Aggiungi articolo</h3>
+    </div>
+    <br>
+		<form class="form-verticaly" (ngSubmit) = "processForm()">
+            <div class="form group col-md-7">
+              <label for="marca">Marca</label>
+              <input type="text" class="form-control" name="marca"
+              class="form-control" [(ngModel)]="articolo.marca" 
+              placeholder="Marca...">
+            </div>
+              <div class="form group col-md-7">
+                <label for="modello">Modello</label>
+                <input type="text" class="form-control" name="modello"
+                class="form-control" [(ngModel)]="articolo.modello"
+                placeholder="Modello...">
+              </div>
+              <div class="form group col-md-7">
+                <label for="prezzo">Prezzo</label>
+                <input type="text" class="form-control" name="prezzo" 
+                class="form-control" [(ngModel)]="articolo.prezzo"
+                placeholder="Prezzo...">
+              </div>
+              <div class="form group col-md-7">
+              <input type="submit" value="Aggiungi articolo" class="btn btn-primary" 
+              style="margin-top: 20px;">
+            </div>
+		</form>
+</div>
